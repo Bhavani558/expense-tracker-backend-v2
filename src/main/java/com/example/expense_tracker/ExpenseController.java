@@ -84,6 +84,11 @@ public class ExpenseController {
 
         return expenseRepository.filterExpenses(category, title);
     }
+    @GetMapping("/test")
+    public String testEndpoint() {
+        return "Backend is live!";
+    }
+
 }
 
 
